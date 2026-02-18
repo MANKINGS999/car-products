@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import MagneticButton from '../components/ui/MagneticButton';
-import TextReveal from '../components/ui/TextReveal';
+
 
 const collections = [
     {
@@ -104,8 +104,8 @@ export default function Collection() {
                             key={category}
                             onClick={() => setActiveCategory(category)}
                             className={`px-6 py-2 rounded-full text-small font-medium transition-all duration-premium ${activeCategory === category
-                                    ? 'bg-gradient-to-r from-accent-primary to-purple-600 text-white shadow-glow-accent'
-                                    : 'text-text-secondary hover:text-white hover:bg-white/5'
+                                ? 'bg-gradient-to-r from-accent-primary to-purple-600 text-white shadow-glow-accent'
+                                : 'text-text-secondary hover:text-white hover:bg-white/5'
                                 }`}
                         >
                             {category}

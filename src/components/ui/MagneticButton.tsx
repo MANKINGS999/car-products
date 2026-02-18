@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring } from 'framer-motion';
-import { useRef, ReactNode } from 'react';
-import type { MouseEvent } from 'react';
+import { useRef } from 'react';
+import type { ReactNode, MouseEvent } from 'react';
 
 export default function MagneticButton({ children, className = "" }: { children: ReactNode, className?: string }) {
     const ref = useRef<HTMLButtonElement>(null);

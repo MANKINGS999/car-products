@@ -1,4 +1,4 @@
-import { motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { motion, useInView, useMotionValue, useSpring } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 
 const stats = [
